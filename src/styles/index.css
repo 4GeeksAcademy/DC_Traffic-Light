@@ -16,6 +16,7 @@
     width: 200px;
     margin:auto;
     border-radius: 21px;
+    margin-bottom: 15px;
     
 }
 
@@ -40,8 +41,8 @@
     height: 171px;
 }
 
-.random {
-    margin: auto;
+#random {
+  
     width: 100px;
     height: 100px;
     background: linear-gradient()
@@ -52,7 +53,6 @@
 .morado {
 
     border-color: blueviolet ;
-
     background-color: blueviolet;
     
 }
@@ -70,7 +70,7 @@
 
 }
 
-.new {
+#new {
 
     background-color: purple;
 }

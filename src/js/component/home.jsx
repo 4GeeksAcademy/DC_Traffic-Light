@@ -90,24 +90,29 @@ const Home = () => {
 		<>
 			<div className="top" ></div>
 			
-			<div className="fondo bg-dark d-flex flex-column  p-3 ">
+			
+			<div className="d-flex">
 				
-				<button type="button" onClick={cambiarRojo} className={"btn btn-danger rounded-circle  mb-2 " + rojo}></button>
-				
-				
-				<button type="button" onClick={cambiarAmarillo} className={"btn btn-warning rounded-circle mb-2 " + amarillo}></button>
-				
-				
-				{esVisible && <button type="button" onClick={cambiarMorado} className={"morado btn rounded-circle mb-2  " + morado}></button>}
+				<div className="">
+				<button type="button" onClick={newColor} id="new " className="btn btn-info justify-content-start">new color</button>
+				<button type="button" onClick={colorRandom} id="random" className=" btn btn-info justify-content-start">Random</button>
+				</div>
+
+				<div className="fondo bg-dark d-flex flex-column  p-3 ">
+					
+					<button type="button" onClick={cambiarRojo} className={"btn btn-danger rounded-circle  mb-2 " + rojo}></button>
+					
+					
+					<button type="button" onClick={cambiarAmarillo} className={"btn btn-warning rounded-circle mb-2 " + amarillo}></button>
+					
+					
+					{esVisible && <button type="button" onClick={cambiarMorado} className={"morado btn rounded-circle mb-2  " + morado}></button>}
 
 
-				<button type="button" onClick={cambiarVerde} className={"btn btn-success rounded-circle mb-2  " + verde}></button>
-				
+					<button type="button" onClick={cambiarVerde} className={"btn btn-success rounded-circle mb-2  " + verde}></button>
+					
 
-			</div>
-			<div className="d-flex justify-content-center">
-			<button type="button" onClick={colorRandom} className="random btn btn-info ">Random</button>
-			<button type="button" onClick={newColor} className="new btn btn-info ">new color</button>
+				</div>
 			</div>
 		</>
 	)
