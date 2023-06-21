@@ -20,36 +20,22 @@ const Home = () => {
 
 		function cambiarRojo(){
 			setRojo("selected")
-			if (rojo === "selected"){
-				setRojo (" ")	
-			}
-			if (amarillo === "selected"){
-				setAmarillo (" ")
-			}
-			if (verde === "selected"){
-				setVerde (" ")
-			}
-			if (morado === "selected"){
-				setMorado (" ")
-			}
+			verde === "selected" ? setVerde (" ") : " ";
+			rojo === "selected" ? setRojo (" ") : " ";
+			amarillo === "selected" ? setAmarillo (" ") : " ";
+			morado === "selected" ? setMorado (" ") : " ";
+			
 		};
 
 		// AMARILLO
 
 		function cambiarAmarillo(){
 			setAmarillo("selected")
-			if (amarillo === "selected"){
-				setAmarillo (" ")
-			}
-			if (verde === "selected"){
-				setVerde (" ")
-			}
-			if (rojo === "selected"){
-				setRojo (" ")	
-			}
-			if (morado === "selected"){
-				setMorado (" ")
-			}
+			verde === "selected" ? setVerde (" ") : " ";
+			rojo === "selected" ? setRojo (" ") : " ";
+			amarillo === "selected" ? setAmarillo (" ") : " ";
+			morado === "selected" ? setMorado (" ") : " ";
+			
 		};
 
 		// VERDE
@@ -57,31 +43,26 @@ const Home = () => {
 
 		function cambiarVerde(){
 			setVerde("selected")
-			if (verde === "selected"){
-				setVerde (" ")
-			}
-			if (rojo === "selected"){
-				setRojo (" ")	
-			}
-			if (amarillo === "selected"){
-				setAmarillo (" ")
-			}
-			if (morado === "selected"){
-				setMorado (" ")
-			}
+
+			verde === "selected" ? setVerde (" ") : " ";
+			rojo === "selected" ? setRojo (" ") : " ";
+			amarillo === "selected" ? setAmarillo (" ") : " ";
+			morado === "selected" ? setMorado (" ") : " ";
+			
 		};
 
 		// RANDOM
 
 		function colorRandom  () {
 
-			let colores = ["Rojo","Amarillo","Verde"]
+			let colores = ["Rojo","Amarillo","Verde","Morado"]
 
 			let resultado = colores[Math.floor(Math.random() * colores.length)];
 
 			resultado === "Rojo" ? cambiarRojo() : " ";
 			resultado === "Amarillo" ? cambiarAmarillo() : " ";
 			resultado === "Verde" ? cambiarVerde() : " ";
+			resultado === "Morado" ? cambiarMorado() : " ";
 
 			}
 
@@ -89,18 +70,10 @@ const Home = () => {
 
 		function cambiarMorado(){
 			setMorado("selected")
-			if (morado === "selected"){
-				setMorado (" ")
-			}
-			if (rojo === "selected"){
-				setRojo (" ")	
-			}
-			if (amarillo === "selected"){
-				setAmarillo (" ")
-			}
-			if (verde === "selected"){
-				setVerde (" ")
-			}
+			verde === "selected" ? setVerde (" ") : " ";
+			rojo === "selected" ? setRojo (" ") : " ";
+			amarillo === "selected" ? setAmarillo (" ") : " ";
+			morado === "selected" ? setMorado (" ") : " ";
 		}
 
 
@@ -110,10 +83,6 @@ const Home = () => {
 				esVisible === true ? setEsVisible(false) : setEsVisible(true);
 
 			  };
-
-				
-
-
 
 
 	return(
@@ -136,8 +105,10 @@ const Home = () => {
 				
 
 			</div>
+			<div className="d-flex justify-content-center">
 			<button type="button" onClick={colorRandom} className="random btn btn-info ">Random</button>
-			<button type="button" onClick={newColor} className="random btn btn-info ">new color</button>
+			<button type="button" onClick={newColor} className="new btn btn-info ">new color</button>
+			</div>
 		</>
 	)
 		

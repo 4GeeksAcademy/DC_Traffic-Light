@@ -43,7 +43,8 @@
 .random {
     margin: auto;
     width: 100px;
-    height: 30px;
+    height: 100px;
+    background: linear-gradient()
     
     
 }
@@ -67,4 +68,9 @@
 
     background-color: rgb(109, 36, 177);
 
+}
+
+.new {
+
+    background-color: purple;
 }
