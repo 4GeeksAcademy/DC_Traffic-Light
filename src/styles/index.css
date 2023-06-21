@@ -15,6 +15,7 @@
 
     width: 200px;
     margin:auto;
+    border-radius: 21px;
     
 }
 
@@ -28,6 +29,42 @@
 
 .selected {
 
-    box-shadow: 0 3px 40px rgba(255, 251, 251, 0.685);;
+    box-shadow: 0 3px 40px rgb(255, 255, 255)
 }
 
+.top{
+
+    background-color: black;
+    margin: auto;
+    width: 32px;
+    height: 171px;
+}
+
+.random {
+    margin: auto;
+    width: 100px;
+    height: 30px;
+    
+    
+}
+
+.morado {
+
+    border-color: blueviolet ;
+
+    background-color: blueviolet;
+    
+}
+
+.morado:hover{
+    background-color: rgb(109, 36, 177);
+    border-color:rgb(109, 36, 177) ;
+
+
+}
+
+.morado:active{
+
+    background-color: rgb(109, 36, 177);
+
+}
