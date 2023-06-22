@@ -17,6 +17,7 @@
     margin:auto;
     border-radius: 21px;
     margin-bottom: 15px;
+    margin-left: 140px;
     
 }
 
@@ -45,9 +46,27 @@
   
     width: 100px;
     height: 100px;
-    background: linear-gradient()
-    
-    
+    margin-left: 372px;
+    background-color: rgb(150, 81, 2);
+   
+}
+
+#random:hover{
+     border-color: rgb(211, 114, 2);
+     background-color: rgb(211, 114, 2);
+}
+
+#new {
+
+    background-color: purple;
+    border-color: purple;
+    margin-left: 372px;
+}
+
+#new:hover{
+
+    background-color: rgb(233, 8, 233);
+    border-color: rgb(233, 8, 233);
 }
 
 .morado {
@@ -56,6 +75,7 @@
     background-color: blueviolet;
     
 }
+
 
 .morado:hover{
     background-color: rgb(109, 36, 177);
@@ -70,7 +90,3 @@
 
 }
 
-#new {
-
-    background-color: purple;
-}

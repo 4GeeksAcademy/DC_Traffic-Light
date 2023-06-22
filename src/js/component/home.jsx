@@ -93,9 +93,9 @@ const Home = () => {
 			
 			<div className="d-flex">
 				
-				<div className="">
-				<button type="button" onClick={newColor} id="new " className="btn btn-info justify-content-start">new color</button>
-				<button type="button" onClick={colorRandom} id="random" className=" btn btn-info justify-content-start">Random</button>
+				<div className="d-flex flex-column">
+				<button type="button" onClick={newColor} id="new" className="btn btn-info justify-content-start text-white">New Color</button>
+				<button type="button" onClick={colorRandom} id="random" className=" btn justify-content-start text-white">Random Color</button>
 				</div>
 
 				<div className="fondo bg-dark d-flex flex-column  p-3 ">
